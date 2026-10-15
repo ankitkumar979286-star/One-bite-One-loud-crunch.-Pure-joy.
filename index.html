@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>One Bite | Pure Joy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="brand">ONE BITE<span>.</span></div>
+  <nav><a href="#products">Products</a><a href="#about">About</a><a href="admin.html">Admin Login</a></nav>
+</header>
+
+<section class="hero">
+  <p class="tag">BSc IT Research Project</p>
+  <h1>One Bite. One Loud Crunch. Pure Joy.</h1>
+  <p>Explore our crunchy snack product concept and place a demo order.</p>
+  <a class="btn" href="#products">View Products</a>
+</section>
+
+<section id="about" class="section">
+  <h2>About the Project</h2>
+  <p>This is an academic demonstration website for the “One Bite. One Loud Crunch. Pure Joy.” research project.</p>
+</section>
+
+<section id="products" class="section">
+  <h2>Our Products</h2>
+  <div id="productsGrid" class="grid"></div>
+</section>
+
+<section class="section cart-section">
+  <h2>Demo Cart</h2>
+  <div id="cart"></div>
+  <div class="checkout">
+    <input id="customerName" placeholder="Your name">
+    <input id="phone" placeholder="Phone number">
+    <textarea id="address" placeholder="Delivery address"></textarea>
+    <button class="btn" onclick="placeOrder()">Place Demo Order</button>
+    <p id="orderMsg"></p>
+  </div>
+</section>
+
+<footer>Neeraj Verma • Ankit Kumar • Rohit Kumar | BSc IT | Shri Ramswaroop Memorial University</footer>
+<script src="script.js"></script>
+</body>
+</html>

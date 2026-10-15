@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Admin Dashboard | One Bite</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="brand">ONE BITE<span>.</span></div><nav><a href="index.html">Store</a></nav></header>
+
+<main class="admin">
+<section id="loginBox" class="panel">
+<h2>Admin Login</h2>
+<input id="username" value="admin" placeholder="Username">
+<input id="password" type="password" value="admin123" placeholder="Password">
+<button class="btn" onclick="adminLogin()">Login</button>
+<p id="loginMsg"></p>
+</section>
+
+<section id="dashboard" hidden>
+<h1>Admin Dashboard</h1>
+<div class="stats">
+<div><b id="statProducts">0</b><span>Products</span></div>
+<div><b id="statOrders">0</b><span>Orders</span></div>
+<div><b id="statPending">0</b><span>Pending</span></div>
+<div><b id="statRevenue">₹0</b><span>Revenue</span></div>
+</div>
+<div class="panel">
+<h2>Orders</h2><div id="orders"></div>
+</div>
+</section>
+</main>
+<script src="admin.js"></script>
+</body>
+</html>
